@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Recherches!{% endblock %}
+
+{% block body %}
+<div class="my-searches">
+    <div class="presentation">
+        <h4 class="my-title">Recherches</h4>
+        <h4 class="my-title">Bibliothèques en ligne</h4>
+        <p>Notre bibliotehque en ligne vous propose des différents seulements et livres et mémoires
+        des Etudiants de l'ISTM-Uvira</p>
+        <p>Vous pouvez en trouvez par une simple recherce dans la barre ci dessous</p>
+    </div>
+    <div class="website-search-bar flex">
+        <input class="flex-1 px-20" type="search" name="product_filter" id="product_filter"
+                placeholder="Rechercher ..." />
+                <select name="categories" id="categories">
+                    <option value="">Chercher par:</option>
+                    <option value="">Nom Etudiant</option>
+                    <option value="">Année de défense</option>
+                    <option value="">Sujet</option>
+                    <option value="">Filière</option>
+                </select>
+            <div class="search-icon flex aic jcc"><i class="bi bi-search"></i></div>
+    </div>
+    <div class="books flex">
+        <div class="all-books">+--
+            <div class="books-item">
+                <div class="book-author">Amani Bagule</div>
+                <div class="book-title">Natalité en baisse à Uvira</div>
+                <div class="book-filiere">Sage Femme</div>
+                <div class="book-year">2022</div>
+            </div>
+        </div>
+        <div class="books-by-category"></div>
+    </div>
+
+</div>
+{% endblock %}

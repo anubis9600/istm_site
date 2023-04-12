@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}ISTM, UVIRA | Bienvenue!
+			{% endblock %}
+		</title>
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+			<link rel="stylesheet" href="/_assets/css/main.css">
+		{% endblock %}
+	</head>
+	<body>
+    {# header start #}
+		<header>
+            {# logo istm #}
+			<div class="logo flex">
+				<a href="/">
+					<img src="/_assets/images/logovrai.png" alt="">
+				</a>
+			</div>
+			<nav>
+            {# contact #}
+                <div class="header-contact flex">
+                    <div class="email">info@istmuvira.net</div>
+                    <div class="bar"></div>
+                    <div class="number">+243 999644524</div>
+                    <div class="social-media flex">
+						<i class="fa-brands fa-facebook"><a href=""></a></i>
+						<i class="fa-brands fa-twitter"><a href=""></a></i>
+						<i class="fa-brands fa-linkedin"><a href=""></a></i>
+                    </div>
+                </div>
+            {# Menu #}
+				<ul class="nav-bar flex aic">
+					<li class="nav-item">
+						<a href="/">Acceuil</a>
+					</li>
+					<li class="nav-item down">
+						<a href="">Catégories</a>
+					</li>
+					<li class="nav-item">
+						<a href="/contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a href="/login">Connexion</a>
+					</li>
+					<li class="nav-item">
+						<a href="/register">Inscription</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+    {# header end #}
+		{% block slider %}{% endblock %}
+		<div class="container"> {% block body %}{% endblock %}
+			</div>
+			<footer>
+				<div class="container">
+					<div class="footer-content flex wrap">
+						<div class="footer-content-item flex-1 b">
+							<h2>Blog</h2>
+							<p>Site d'informations et d'actualités sur tous les sujets relatifs à l'informatique,
+								                        l'economie, la situation dans le monde, etc...
+							</p>
+						</div>
+						<div class="footer-content-item flex-1 b">
+							<h2>Mentions légales</h2>
+							<ul>
+								<li><a href="">Condition d'utilisation</a></li>
+								<li><a href="">Condition de ventes</a></li>
+								<li><a href="">Condition de publication</a></li>
+							</ul>
+						</div>
+						<div class="footer-content-item flex-1 b">
+							<h2>Formations gratuites</h2>
+							<ul>
+								<li><a href="https://free.mudey.fr/programme/apprendre-les-bases-indispensables-du-langage-html-5" target="_blank">Les bases HTML 5</a></li>
+								<li><a href="https://free.mudey.fr/programme/apprendre-les-bases-indispensables-du-langage-css-3" target="_blank">Les bases CSS 3</a></li>
+								<li><a href="https://free.mudey.fr/programme/apprendre-les-bases-indispensables-du-langages-javascript" target="_blank">Les bases JavaScript</a></li>
+								<li><a href="https://free.mudey.fr/programme/les-bases-indispensables-du-langage-php" target="_blank">Les bases PHP</a></li>
+								<li><a href="https://mudey.fr/programme/formation-complete-developpeur-web-full-stack" target="_blank">Devenir Expert du Web</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			{% block javascripts %}
+				{{ encore_entry_script_tags('app') }}
+			{% endblock %}
+		</body>
+
+		<script src="/_assets/js/bootstrap.bundle.min.js"></script>
+	</html>
