@@ -1,0 +1,19 @@
+.my-searches{
+    width: 100%;
+}
+.books{
+    gap: 10px;
+    width: 100%;
+    height: auto;
+}
+.books .all-books{
+    flex: 2;
+}
+.books .books-by-category{
+    flex: 1;
+}
+.all-books .books-item{
+    color: var(--main-color);
+    background-color: var(--main-color-white);
+    width: 200px;
+}

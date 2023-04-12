@@ -1,0 +1,129 @@
+/************ NEWS *************/
+.our-news-and-events{
+    width: 100%;
+    height: 700px;
+}
+.our-news-and-events .news {
+    flex: 1;
+    padding-top: 10px;
+}
+.news .news-item{
+    margin-right: 10px;
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.news .news-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* .our-news-and-events .news h4,
+.our-news-and-events .events h4{
+
+} */
+
+.our-news-and-events .events {
+    flex: 1;
+    background-color: var(--main-color);
+}
+.news-item{
+    gap: 30px;
+}
+.news-item .news-image{
+    width: 250px;
+}
+.news-item .news-description h5{
+    color: var(--main-color);
+    font-weight: bold;
+}
+.news-item .news-description{
+    width: 250px;
+    text-align: justify;
+}
+.news-item .news-description p{
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.news-item .news-image img{
+    width: 100%;
+}
+.author{
+    gap: 10px;
+    padding-top: 10px;
+}
+.author-name h6{
+    font-size: 0.8rem;
+}
+.news-description a, .author-name h6 a{
+    font-weight: bold;
+    color: var(--main-color);
+}
+.author img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+.news .all-news{
+    margin-top: 15px;
+    padding: 10px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 270px;
+}
+.news .all-news:hover{
+    cursor: pointer;
+    background-color: var(--main-color-moins);
+    color: white;
+}
+
+/**************** EVENTS **************/
+.our-news-and-events .events{
+    padding-left: 10px;
+    padding-top: 10px;
+    color: var(--main-color-white);
+}
+.our-news-and-events .events h4{
+    color: var(--main-color-white);
+    padding-bottom: 30px;
+}
+.events-items{
+    margin-bottom: 30px;
+}
+.events-items .events-date{
+    width: 150px;
+    padding: 10px 30px 10px 10px;
+    background-color: var(--dark);
+    border-radius: 10px;
+    border-radius: 0 10px 0 10px;
+    border: 2px solid var(--main-color-white);
+}
+.events-items .events-details{
+    width: 400px;
+    padding: 10px;
+    height: 100px;
+    border-radius: 10px 0 10px 0;
+    background-color: var(--main-color-plus);
+    border: 2px solid var(--main-color-white)
+}
+.event-description p{
+    font-size: 0.8rem;
+}
+.event-description a{
+    font-weight: bold;
+}
+.events .all-news{
+    margin-top: 210px;
+    padding: 10px;
+    color: var(--main-color-white);
+    border: 2px solid var(--main-color-white);
+    width: 270px;
+}
+.events .all-news:hover{
+    cursor: pointer;
+    background-color: var(--main-color-plus);
+    color: white;
+}

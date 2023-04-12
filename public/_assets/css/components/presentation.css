@@ -1,0 +1,9 @@
+.my-searches{
+    padding: 20px;
+    background-color: var(--main-color-white);
+    color: var(--main-color);
+    height: 100vh;
+}
+.presentation .my-title {
+    color: var(--main-color);
+}

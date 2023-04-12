@@ -1,0 +1,44 @@
+.website-search-bar {
+    height: 50px;
+    margin: 10px 0;
+}
+.website-search-bar input{
+    background-color: #efefef;
+    border-radius: 50px 0 0 50px;
+    font-size: 1.2rem;
+    border: 2px solid var(--main-color-plus-plus);
+    border-right: 1px solid var(--main-color);
+    outline: none; 
+    padding-left: 10px;
+}
+.website-search-bar select{
+    background-color: #efefef;
+    outline: none; 
+    border: none;
+    border-right: 1px solid var(--main-color);
+    border-left: 1px solid var(--main-color);
+}
+.website-search-bar .search-icon{
+    width: 50px;
+    background-color: #efefef;
+    border-radius: 0 50px 50px 0;
+    border-left: 1px solid var(--main-color-white);
+}
+.website-details .website-call-us{
+    height: 50px;
+}
+.website-details .website-call-us h3{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--main-color-gray);
+} 
+.website-details .website-call-us .call-message a{
+    font-weight: bold;
+}
+.call-icon i, .website-icon i{
+    font-size: 2rem;
+}
+.fa-bars{
+    font-size: 2rem;
+    color: var(--main-color);
+}
